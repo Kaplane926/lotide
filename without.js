@@ -1,25 +1,6 @@
-const eqArrays = function(array1, array2){
-  if(array1.length !== array2.length){
+const eqArrays = require("./eqArrays")
 
-    return false
-
-  }
-  for(let i = 0; i < array1.length; i++){
-    if(array1[i] !== array2[i]){
-      return false
-    }
-  }
-  return true
-}
-
-const assertArraysEqual = function(actual, expected) {
-  if (eqArrays(actual, expected) === false) {
-    return `🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`;
-  } else {
-    return `✅✅✅ Assertion Passed: ${actual} === ${expected}`;
-  }
-
-};
+const assertArraysEqual = require("./assertArraysEqual")
 
 const without = function(source, itemsToRemove){
   let newArray = []
@@ -34,11 +15,13 @@ const without = function(source, itemsToRemove){
   return newArray
 }
 
-console.log(without([1, 2, 3], [1])) // => [2, 3]
+module.exports = without
+
+/*console.log(without([1, 2, 3], [1])) // => [2, 3]
 console.log(without(["1", "2", "3"], [1, 2, "3"])) // => ["1", "2"]
 
 const words = ["hello", "world", "lighthouse"];
 console.log(without(words, ["lighthouse"])); 
 
 console.log(assertArraysEqual(words, ["hello", "world", "lighthouse"]));
-console.log(without([1, 2, 3], [3, 7, 4]))
+console.log(without([1, 2, 3], [3, 7, 4]))*/
