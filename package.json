@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@kaplane/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "A library of useful javascript function",
   "main": "index.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/Kaplane926/lotide.git"
   },
-  "author": "",
+  "author": "Eli Kaplan",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Kaplane926/lotide/issues"
