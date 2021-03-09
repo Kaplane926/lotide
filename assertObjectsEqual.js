@@ -33,7 +33,7 @@ const assertObjectsEqual = function(actual, expected) {
 
 module.exports = assertObjectsEqual
 
-const dominion = {durations: "orange",
+/*const dominion = {durations: "orange",
 vicoryPoints: [3,5,6,10],
 players: [2,3,4,5,6],
 bestplayer: "kaplane"
@@ -50,4 +50,4 @@ const idgaf = {
 }
 
 console.log(assertObjectsEqual(hominion, dominion))
-console.log(assertObjectsEqual(idgaf, dominion))
+console.log(assertObjectsEqual(idgaf, dominion))*/
